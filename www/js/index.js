@@ -10,6 +10,8 @@ $(document).on('pageinit', function() {
 });
 
 
+
+
 //Call this function when you want to get the current position
 function getPosition() {
 	
@@ -67,5 +69,6 @@ function successPosition(position) {
 function failPosition(error) {
 	//change time box to show updated message
 	$('#time').val("Error getting data: " + error);
+    alert('Error w/ watchPosition: ' +JSON.stringify(error));
 	
 }
