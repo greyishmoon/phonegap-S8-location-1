@@ -6,7 +6,18 @@ $(document).on('pageinit', function() {
 	
 	//change time box to show message
 	$('#time').val("Press the button to get location data");
-	
+    
+    // Listener for button
+    $('#getLocationButton').on("click", getPosition);
+    
+    // Swip page nav
+    $( document ).on( "swipeleft", "#header1", function() {
+        $.mobile.changePage('#page2', { transition: "slide"} );
+    });
+    $( document ).on( "swiperight", "#header2", function() {
+        $.mobile.changePage('#page1', { transition: "slide",
+            reverse: true } );
+    });
 });
 
 
