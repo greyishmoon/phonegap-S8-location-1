@@ -16,95 +16,56 @@
 <body>
   
 	<!-- Example JQuery Mobile page structure (with fixed header/footer)   -->
-  	<div data-role="page" id="pageone" data-position="fixed">
-		<div data-role="header">
-			<h1>Location</h1>
-		</div>
+  	<div data-role="page" id="page1">
+        
+        <div data-role="header" id="header1">
+            <h1>Location</h1>
+        </div>
 
-		<div data-role="fieldcontain">
+		<div data-role="main" class="ui-content">
             
-		<button id="getLocationButton">Get Location</button>
+            <button id="getLocationButton">Get Location!</button>
+
+            <label for="longtext">Longitude:</label>
+            <input type="text" name="longtext" id="longtext" value=""  />
+
+            <label for="lattext">Latitude:</label>
+            <input type="text" name="lattext" id="lattext" value=""  />
+
+            <label for="time">Time:</label>
+            <input type="text" name="time" id="time" value=""  />
+
+            <!--EXTRAS-->
+
+            <label for="acctext">Accuracy:</label>
+            <input type="text" name="acctext" id="acctext" value=""  />
+
+            <label for="alttext">Altitude:</label>
+            <input type="text" name="alttext" id="alttext" value=""  />
+
+            <label for="altacctext">Altitude accuracy:</label>
+            <input type="text" name="altacctext" id="altacctext" value=""  />
+
+            <label for="headtext">Heading:</label>
+            <input type="text" name="headtext" id="headtext" value=""  />
+
+            <label for="speedtext">Speed:</label>
+            <input type="text" name="speedtext" id="headtespeedtextxt" value=""  />
             
-      	<label for="longtext">Longitude:</label>
-      	<input type="text" name="longtext" id="longtext" value=""  />
-            
-      	<label for="lattext">Latitude:</label>
-      	<input type="text" name="lattext" id="lattext" value=""  />
-            
-      	<label for="time">Time:</label>
-      	<input type="text" name="time" id="time" value=""  />
-            
-        <!--EXTRAS-->
-        
-        <label for="acctext">Accuracy:</label>
-      	<input type="text" name="acctext" id="acctext" value=""  />
-        
-        <label for="alttext">Altitude:</label>
-      	<input type="text" name="alttext" id="alttext" value=""  />
-        
-        <label for="altacctext">Altitude accuracy:</label>
-      	<input type="text" name="altacctext" id="altacctext" value=""  />
-        
-        <label for="headtext">Heading:</label>
-      	<input type="text" name="headtext" id="headtext" value=""  />
-        
-        <label for="speedtext">Speed:</label>
-      	<input type="text" name="speedtext" id="headtespeedtextxt" value=""  />
-            
-    </div>
+        </div>
 
 		<div data-role="footer" data-position="fixed">
 			<h1>Footer Text</h1>
 		</div>
     </div> 
     
-    <div data-role="page" id="page1" data-position="fixed">
-		<div data-role="header">
-			<h1>Location</h1>
-		</div>
 
-		<div data-role="fieldcontain">
-            
-		<button id="getLocationButton">Get Location</button>
-            
-      	<label for="longtext">Longitude:</label>
-      	<input type="text" name="longtext" id="longtext" value=""  />
-            
-      	<label for="lattext">Latitude:</label>
-      	<input type="text" name="lattext" id="lattext" value=""  />
-            
-      	<label for="time">Time:</label>
-      	<input type="text" name="time" id="time" value=""  />
-            
-        <!--EXTRAS-->
-        
-        <label for="acctext">Accuracy:</label>
-      	<input type="text" name="acctext" id="acctext" value=""  />
-        
-        <label for="alttext">Altitude:</label>
-      	<input type="text" name="alttext" id="alttext" value=""  />
-        
-        <label for="altacctext">Altitude accuracy:</label>
-      	<input type="text" name="altacctext" id="altacctext" value=""  />
-        
-        <label for="headtext">Heading:</label>
-      	<input type="text" name="headtext" id="headtext" value=""  />
-        
-        <label for="speedtext">Speed:</label>
-      	<input type="text" name="speedtext" id="headtespeedtextxt" value=""  />
-            
-    </div>
-
-		<div data-role="footer" data-position="fixed">
-			<h1>Footer Text</h1>
-		</div>
-    </div> 
     
     ///// PERMISSIONS TEST ////
     <div data-role="page" id="page2">
-    <div data-role="header" id="header2"  data-position="fixed">
-        <h1>Compass</h1>
-    </div>
+        <div data-role="header" id="header2">
+            <h1>Permissions test</h1>
+        </div>
 
     
     <div data-role="main" class="ui-content">

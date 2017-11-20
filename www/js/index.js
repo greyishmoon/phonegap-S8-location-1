@@ -12,6 +12,7 @@ $(document).on('pageinit', function() {
     
     // Swip page nav
     $( document ).on( "swipeleft", "#header1", function() {
+        alert ("TRIGGERED");
         $.mobile.changePage('#page2', { transition: "slide"} );
     });
     $( document ).on( "swiperight", "#header2", function() {
