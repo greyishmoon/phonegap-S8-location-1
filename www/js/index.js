@@ -10,15 +10,6 @@ $(document).on('pageinit', function() {
     // Listener for button
     $('#getLocationButton').on("click", getPosition);
     
-    // Swip page nav
-    $( document ).on( "swipeleft", "#header1", function() {
-        alert ("TRIGGERED");
-        $.mobile.changePage('#page2', { transition: "slide"} );
-    });
-    $( document ).on( "swiperight", "#header2", function() {
-        $.mobile.changePage('#page1', { transition: "slide",
-            reverse: true } );
-    });
 });
 
 
@@ -37,7 +28,7 @@ function getPosition() {
 
 //called when the position is successfully determined
 function successPosition(position) {
-	alert ("loc");
+
 	//You can find out more details about what the position obejct contains here:
 	// http://www.w3schools.com/html/html5_geolocation.asp
 	
