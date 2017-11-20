@@ -24,10 +24,10 @@
     
    	<plugin name="cordova-plugin-whitelist" version="1" />
     
-    <plugin name="cordova-plugin-android-permissions" />
+<!--    <plugin name="cordova-plugin-android-permissions" />-->
     
     <!--Android 6.0 or newer: Plugin to support runtime permissions--> 
-<!--    <plugin name="cordova-plugin-geolocation-android-activator" />-->
+    <plugin name="cordova-plugin-geolocation-android-activator" />
     
     <!--Plugin to support gathering of location data--> 
     <plugin name="cordova-plugin-geolocation"  />
